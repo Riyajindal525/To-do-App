@@ -1,4 +1,4 @@
- *{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   padding-top: 50px;
 }
 
@@ -19,16 +18,20 @@ h1 {
   color: #4a4a4a;
   margin-bottom: 20px;
   font-size: 2.5rem;
-}*
+}
+
+input[type="text"], button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
 
 input[type="text"] {
-  padding: 12px 20px;
   width: 300px;
   border: 2px solid #b0c4de;
-  border-radius: 25px;
-  outline: none;
-  font-size: 1rem;
-  transition: 0.3s;
   margin-right: 10px;
 }
 
@@ -38,14 +41,9 @@ input[type="text"]:focus {
 }
 
 button {
-  padding: 12px 20px;
   background-color: #7aaaff;
   color: white;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 button:hover {
@@ -57,20 +55,19 @@ ul {
   width: 100%;
   max-width: 500px;
   margin-top: 30px;
-  padding: 0;
 }
 
 li {
-  background-color: #ffffff;
+  background: #fff;
   margin: 10px 0;
   padding: 15px 20px;
   border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   font-size: 1.1rem;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 li:hover {
@@ -78,22 +75,15 @@ li:hover {
 }
 
 li button {
-  background-color: #ff4c4c;
+  background: #ff4c4c;
   padding: 6px 14px;
-  border: none;
-  border-radius: 20px;
   font-size: 0.9rem;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 li button:hover {
-  background-color: #e63333;
+  background: #e63333;
 }
 
 .delete {
   display: none;
-} 
-
-
+}
